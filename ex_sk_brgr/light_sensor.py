@@ -8,7 +8,7 @@ from std_msgs.msg import Int32
 class LightSensorNode(Node):
     
     def __init__(self):
-        super().__init__("ls_node")
+        super().__init__("light_sensor")
         i2c = board.I2C()
         self.veml7700 = adafruit_veml7700.VEML7700(i2c)
         self.publisher_ = self.create_publisher(Int32, 'light_reading', 10)

@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            "light_sensor = ex_sk_brgr.light_sensor:main"
         ],
     },
 )
